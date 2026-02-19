@@ -125,7 +125,15 @@ section {
 }
 
 /* Social Icons */
-.social-icon a {
+/* SOCIAL ICONS */
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icon a:not(.resume-btn) {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -135,26 +143,34 @@ section {
   font-size: 2rem;
   border-radius: 50%;
   color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
   transition: 0.3s ease;
 }
 
-.social-icon a:hover {
+.social-icon a:not(.resume-btn):hover {
   background: var(--main-color);
   color: black;
   transform: scale(1.2) translateY(-5px);
   box-shadow: 0 0 25px var(--main-color);
 }
 
-/* Resume Button */
+/* RESUME BUTTON (Now Fully Separate) */
 .resume-btn {
-  padding: 8px 16px;
+  width: auto !important;
+  height: auto !important;
+  padding: 8px 18px !important;
+  border-radius: 25px !important;
   background-color: #007bff;
-  color: white;
-  border-radius: 20px;
+  color: white !important;
   font-size: 14px;
-  transition: 0.3s ease;
+  font-weight: 500;
+  border: none !important;
 }
+
+.resume-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
 
 .resume-btn:hover {
   background-color: #0056b3;
@@ -285,3 +301,4 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
