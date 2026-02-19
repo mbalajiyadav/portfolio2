@@ -438,6 +438,107 @@ section {
   color: black;
 }
 
+/* ================= EDUCATION SECTION ================= */
+
+.education {
+  background: var(--second-bg-color);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+/* Vertical Line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: var(--main-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Container */
+.container {
+  padding: 2rem 4rem;
+  position: relative;
+  width: 50%;
+}
+
+/* Left Side */
+.container.left {
+  left: 0;
+}
+
+/* Right Side */
+.container.right {
+  left: 50%;
+}
+
+/* Circle */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background: var(--main-color);
+  border-radius: 50%;
+  top: 25px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -10px;
+}
+
+/* Content Box */
+.content {
+  padding: 2rem;
+  background: var(--bg-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .timeline::after {
+    left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 2rem;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container::after {
+    left: 10px;
+  }
+}
+
+
 
 
 
