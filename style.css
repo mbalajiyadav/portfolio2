@@ -581,6 +581,96 @@ section {
     color: var(--main-color);
 }
 
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 5rem 5%;
+  }
+
+  /* HOME SECTION */
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 200px;
+  }
+
+  .home-content {
+    align-items: center;
+  }
+
+  /* PROJECTS */
+  .services-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .service-box {
+    width: 100%;
+  }
+
+  /* PROJECT BUTTONS */
+  .project-links {
+    justify-content: center;
+  }
+
+  /* CERTIFICATIONS */
+  .certifications-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* EDUCATION TIMELINE FIX */
+  .timeline::after {
+    left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+  }
+
+  .container.left,
+  .container.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .container::after {
+    left: 10px;
+  }
+
+  /* CONTACT FORM */
+  .contact form .input-box {
+    flex-direction: column;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+
+  .contact form textarea {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+  }
+
+}
+
 
 
 
