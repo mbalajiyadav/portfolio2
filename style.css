@@ -331,10 +331,11 @@ section {
 }
 /* ================= CONTACT SECTION ================= */
 
+/* ================= CONTACT SECTION ================= */
+
 .contact {
   background: var(--bg-color);
   text-align: center;
-  padding-bottom: 8rem;
 }
 
 .contact form {
@@ -344,18 +345,17 @@ section {
 
 .contact .input-box {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .contact .input-box input {
-  width: 48%;
+  flex: 1;
   padding: 1.5rem;
   font-size: 1.6rem;
   background: var(--second-bg-color);
-  border-radius: 0.8rem;
   color: var(--text-color);
+  border-radius: 0.8rem;
   border: 1px solid transparent;
 }
 
@@ -364,10 +364,10 @@ section {
   padding: 1.5rem;
   font-size: 1.6rem;
   background: var(--second-bg-color);
-  border-radius: 0.8rem;
   color: var(--text-color);
-  margin-top: 2rem;
+  border-radius: 0.8rem;
   resize: none;
+  margin-bottom: 2rem;
   border: 1px solid transparent;
 }
 
@@ -376,9 +376,7 @@ section {
   border: 1px solid var(--main-color);
 }
 
-.contact .btn {
-  margin-top: 3rem;
-}
+/* ================= FOOTER ================= */
 /* ================= FOOTER ================= */
 
 .footer {
@@ -413,6 +411,7 @@ section {
 .footer .list {
   list-style: none;
   padding: 0;
+  margin-top: 2rem;
 }
 
 .footer .list li {
@@ -430,6 +429,7 @@ section {
   text-decoration: underline;
 }
 
+
 .footer::after {
   content: "© 2025 Balaji | All Rights Reserved";
   display: block;
@@ -437,6 +437,7 @@ section {
   font-size: 1.4rem;
   color: black;
 }
+
 
 
 
