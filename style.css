@@ -302,4 +302,33 @@ section {
   padding-bottom: 8rem;
 }
 
+/* Certification Section Styling */
+.certification {
+  background: var(--second-bg-color);
+}
+
+.certification .cert-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certification li {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.certification .para {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: #ccc;
+}
+
+.certification a {
+  color: var(--main-color);
+  margin-left: 1rem;
+  font-size: 1.6rem;
+}
+
+
 
