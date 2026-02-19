@@ -329,6 +329,115 @@ section {
   margin-left: 1rem;
   font-size: 1.6rem;
 }
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+  background: var(--bg-color);
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.contact form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.contact .input-box input {
+  width: 48%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  color: var(--text-color);
+  border: 1px solid transparent;
+}
+
+.contact textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  background: var(--second-bg-color);
+  border-radius: 0.8rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+  resize: none;
+  border: 1px solid transparent;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border: 1px solid var(--main-color);
+}
+
+.contact .btn {
+  margin-top: 3rem;
+}
+/* ================= FOOTER ================= */
+
+.footer {
+  background: var(--main-color);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.footer .social {
+  margin-bottom: 2rem;
+}
+
+.footer .social a {
+  font-size: 2rem;
+  color: black;
+  border: 2px solid black;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+  background: black;
+  color: var(--main-color);
+  transform: translateY(-5px);
+}
+
+.footer .list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .list li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer .list li a {
+  color: black;
+  font-size: 1.6rem;
+  transition: 0.3s ease;
+}
+
+.footer .list li a:hover {
+  text-decoration: underline;
+}
+
+.footer::after {
+  content: "© 2025 Balaji | All Rights Reserved";
+  display: block;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  color: black;
+}
+
 
 
 
