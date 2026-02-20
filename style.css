@@ -670,6 +670,104 @@ section {
   }
 
 }
+/* =======================
+   RESEARCH & PUBLICATIONS
+======================= */
+
+.research {
+    padding: 6rem 9%;
+    background: var(--second-bg-color); /* same as other sections */
+}
+
+.research .heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Container */
+.research-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+/* Card */
+.research-card {
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 1.2rem;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.research-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-6px);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+/* Title */
+.research-card h3 {
+    font-size: 1.9rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+/* Journal line */
+.research-card .journal {
+    font-size: 1.4rem;
+    color: #8ab4f8;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+/* Paragraph */
+.research-card p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Button */
+.research-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: var(--main-color);
+    color: #000;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.research-btn:hover {
+    background: #fff;
+    color: var(--main-color);
+}
+
+/* =======================
+   MOBILE RESPONSIVENESS
+======================= */
+
+@media (max-width: 768px) {
+    .research {
+        padding: 4rem 6%;
+    }
+
+    .research-card {
+        padding: 2rem;
+    }
+
+    .research-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .research-card p {
+        font-size: 1.4rem;
+    }
+}
 
 
 
