@@ -670,74 +670,83 @@ section {
   }
 
 }
-/* =======================
-   RESEARCH & PUBLICATIONS
-======================= */
+/* ================================
+   RESEARCH & PUBLICATIONS SECTION
+================================ */
 
 .research {
-    padding: 6rem 9%;
-    background: var(--second-bg-color); /* same as other sections */
+    padding: 8rem 9%;
+    background: var(--second-bg-color);
 }
 
 .research .heading {
     text-align: center;
-    margin-bottom: 4rem;
+    font-size: 4rem;
+    margin-bottom: 5rem;
 }
 
-/* Container */
+/* Container Grid */
 .research-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
 }
 
-/* Card */
+/* Research Card */
 .research-card {
     background: var(--bg-color);
-    padding: 2.5rem;
-    border-radius: 1.2rem;
-    border: 2px solid transparent;
-    transition: 0.3s ease;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    line-height: 1.8;
 }
 
+/* Hover Effect */
 .research-card:hover {
+    transform: translateY(-8px);
     border-color: var(--main-color);
-    transform: translateY(-6px);
-    box-shadow: 0 0 15px var(--main-color);
+    box-shadow: 0 0 25px rgba(0, 238, 255, 0.3);
 }
 
-/* Title */
+/* Paper Title */
 .research-card h3 {
-    font-size: 1.9rem;
+    font-size: 2.6rem;
+    font-weight: 600;
     color: var(--main-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Journal line */
+/* Conference / Journal Info */
 .research-card .journal {
-    font-size: 1.4rem;
-    color: #8ab4f8;
-    margin-bottom: 1.2rem;
+    font-size: 1.9rem;
     font-weight: 500;
+    color: #8ab4f8;
+    margin-bottom: 1.5rem;
 }
 
-/* Paragraph */
+/* Description */
 .research-card p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+}
+
+/* DOI */
+.research-card p b {
+    color: #fff;
 }
 
 /* Button */
 .research-btn {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.8rem 1.8rem;
-    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     background: var(--main-color);
     color: #000;
-    border-radius: 0.8rem;
+    border-radius: 1rem;
     text-decoration: none;
     transition: 0.3s ease;
 }
@@ -747,25 +756,35 @@ section {
     color: var(--main-color);
 }
 
-/* =======================
-   MOBILE RESPONSIVENESS
-======================= */
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 991px) {
+    .research {
+        padding: 6rem 5%;
+    }
+
+    .research .heading {
+        font-size: 3.5rem;
+    }
+}
 
 @media (max-width: 768px) {
-    .research {
-        padding: 4rem 6%;
+    .research-container {
+        grid-template-columns: 1fr;
     }
 
     .research-card {
-        padding: 2rem;
+        padding: 2.5rem;
     }
 
     .research-card h3 {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
 
     .research-card p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
