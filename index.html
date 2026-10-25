@@ -12,6 +12,110 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        /* ===== SKILLS SECTION ===== */
+        .skills-section {
+            background: #161616;
+            padding: 8rem 9%;
+        }
+        .skills-section .heading {
+            text-align: center;
+            font-size: 4.5rem;
+            margin-bottom: 5rem;
+            text-decoration: none !important;
+        }
+        .skills-section .heading span {
+            color: #7b4bb7;
+            text-decoration: none !important;
+        }
+        /* Tab buttons */
+        .skills-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 5rem;
+        }
+        .skill-tab {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(123,75,183,0.4);
+            padding: 1rem 2.4rem;
+            font-size: 1.5rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            border-radius: 5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            letter-spacing: 0.05em;
+        }
+        .skill-tab:hover,
+        .skill-tab.active {
+            background: #7b4bb7;
+            border-color: #7b4bb7;
+            color: #fff;
+            box-shadow: 0 0 18px rgba(123,75,183,0.55);
+            transform: translateY(-2px);
+        }
+        /* Skills grid */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+        /* Skill card */
+        .skill-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            width: 13rem;
+            height: 13rem;
+            background: rgba(255,255,255,0.03);
+            border: 2px solid rgba(255,255,255,0.07);
+            border-radius: 1.6rem;
+            cursor: default;
+            transition: all 0.35s ease;
+            opacity: 0.35;
+            filter: grayscale(60%);
+        }
+        .skill-card i {
+            font-size: 4.5rem;
+            transition: transform 0.3s ease;
+        }
+        .skill-card span {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #ccc;
+            text-align: center;
+        }
+        /* Highlighted state */
+        .skill-card.highlighted {
+            opacity: 1;
+            filter: grayscale(0%);
+            border-color: #7b4bb7;
+            background: rgba(123,75,183,0.12);
+            box-shadow: 0 0 22px rgba(123,75,183,0.35);
+            transform: translateY(-6px);
+        }
+        .skill-card.highlighted i {
+            transform: scale(1.15);
+        }
+        /* Icon colour fixes */
+        .devicon-express-original,
+        .devicon-github-original { color: #ffffff; }
+        .fa-solid.fa-server { color: #7b4bb7; }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skills-tabs { gap: 1rem; }
+            .skill-tab { font-size: 1.3rem; padding: 0.8rem 1.8rem; }
+            .skill-card { width: 11rem; height: 11rem; }
+            .skill-card i { font-size: 3.5rem; }
+        }
+    </style>
     </head>
     <body>
         <header class ="header">
